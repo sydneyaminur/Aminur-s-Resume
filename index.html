@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aminur's Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+        }
+        .resume-container {
+            max-width: 900px; /* Increased max-width for a slightly wider resume */
+            margin: 2rem auto;
+            background-color: #ffffff;
+            border-radius: 12px; /* Slightly larger border radius */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Softer, more spread out shadow */
+            overflow: hidden; /* Ensures child elements respect border radius */
+        }
+        .header-section {
+            background-color: #2c3e50; /* Darker, sophisticated blue */
+            color: #ffffff;
+            padding: 2.5rem; /* Increased padding */
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+        .section-title {
+            font-size: 1.4rem; /* Slightly larger section titles */
+            font-weight: 700;
+            color: #1a202c; /* Darker text for titles */
+            margin-bottom: 1.5rem; /* More space below titles */
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #3498db; /* Accent color border */
+            display: inline-block; /* Ensures border only spans text width */
+        }
+        .content-section {
+            padding: 2rem 2.5rem; /* Consistent padding */
+        }
+        .job-title, .degree-title {
+            font-weight: 600;
+            color: #2c3e50; /* Dark blue for titles */
+        }
+        .company-name, .institution-name {
+            color: #3498db; /* Accent color for company/institution */
+            font-weight: 500;
+        }
+        .date-range {
+            color: #718096; /* Medium gray for dates */
+            font-style: italic;
+        }
+        .skill-tag {
+            background-color: #e0f2fe; /* Lighter blue for skill tags */
+            color: #102e3f; /* Darker blue text for skill tags */
+            padding: 0.5rem 1rem;
+            border-radius: 20px; /* Pill-shaped tags */
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .contact-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 0.75rem; /* More space next to icon */
+            vertical-align: middle;
+        }
+        /* Ensure images have fallbacks */
+        img {
+            background-color: #e2e8f0; /* Placeholder background */
+        }
+        /* Print specific styles */
+        @media print {
+            body {
+                background-color: #ffffff;
+                -webkit-print-color-adjust: exact; /* Ensures colors print in Chrome/Safari */
+                print-color-adjust: exact; /* Standard */
+            }
+            .resume-container {
+                margin: 0;
+                box-shadow: none;
+                border-radius: 0;
+                max-width: 100%;
+            }
+            .header-section {
+                border-radius: 0;
+            }
+            .no-print {
+                display: none;
+            }
+            /* Ensure dark text on white background for printing */
+            .header-section, .header-section h1, .header-section p, .header-section a {
+                color: #000000 !important; /* Black text on white for print */
+            }
+            .header-section {
+                background-color: #f0f0f0 !important; /* Light gray background for header in print */
+            }
+             .skill-tag {
+                background-color: #eeeeee !important;
+                color: #333333 !important;
+                border: 1px solid #cccccc;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-container">
+        <header class="header-section text-center sm:text-left">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start">
+                <img 
+                    src="aminur.jpg" 
+                    alt="Aminur Rahman" 
+                    class="w-24 h-24 sm:w-32 sm:h-32 rounded-full border-4 border-white shadow-lg mb-4 sm:mb-0 sm:mr-8"
+                    onerror="this.src='profile pic.jpg'; this.alt='Error loading image';"
+                >
+                <div>
+                    <h1 class="text-4xl sm:text-5xl font-bold tracking-tight">Aminur Rahman</h1>
+                    <p class="text-xl sm:text-2xl text-blue-300 mt-1">Roll: 3981 Batch: 65/D</p>
+                    <div class="mt-4 space-y-2 text-sm sm:text-base">
+                        <p>
+                            <svg class="contact-icon inline-block" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                            (+880) 1626-534599
+                        </p>
+                        <p>
+                            <svg class="contact-icon inline-block" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                            <a href="0323653981@student.wub.edu.bd" class="hover:text-blue-300">0323653981@student.wub.edu.bd</a>
+                        </p>
+                        <p>
+                            <svg class="contact-icon inline-block" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0012 11z" clip-rule="evenodd"></path></svg>
+                            Uttara, Dhaka, 1230
+                        </p>
+                        <p>
+                            <svg class="contact-icon inline-block" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                            <a href="https://github.com/sydneyaminur" target="_blank" rel="noopener noreferrer" class="hover:text-blue-300">github.com/sydneyaminur</a>
+                        </p>
+                        <p>
+                             <svg class="contact-icon inline-block" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            <a href="https://linkedin.com/in/sydneyaminur/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-300">linkedin.com/in/sydneyaminur</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-0">
+            <div class="md:col-span-2 content-section border-r-0 md:border-r md:border-gray-200">
+                <section class="mb-8">
+                    <h2 class="section-title">Summary</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        A proactive Computer Science student at the World University of Bangladesh, proficient in Adobe Premer Pro, After effects, Lightroom and Photoshop. I have a keen interest in Video Editing, 3D Projects and Web Devloping. I am looking for an opportunity to leverage my technical skills and collaborative spirit in a internship role within the tech industry.
+                    </p>
+                </section>
+
+                <section class="mb-8">
+                    <h2 class="section-title">Experience</h2>
+                    <div class="space-y-6">
+                        <div class="job-item">
+                            <h3 class="text-xl job-title">Video Editor</h3>
+                            <p class="company-name">On Upwork.</p>
+                            <p class="date-range">January 2020 - Present</p>
+                            <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1 leading-relaxed">
+                                <li>Worked for some international YouTubers to edit their videos.</li>
+                                <li>Collaborated with cross-platforms content crators and make some potcast like show for You Tube.</li>
+                                <li>Led a team of 3 junior editors to use VFX to bring the video script to reality .</li>
+                                <li>Authored and curated compelling multimedia content including photography, videos, and articles that resonated with a global travel enthusiast audience.</li>
+                            </ul>
+                        </div>
+                        <div class="job-item">
+                            <h3 class="text-xl job-title">Founder & Manager</h3>
+                            <p class="company-name">The Wolf Rider</p>
+                            <p class="date-range">June 2018 - Present</p>
+                            <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1 leading-relaxed">
+                                <li>Developed and managed a travel-focused Facebook page, organically growing the audience to 80,000+ followers.</li>
+                                <li>Responsible for content creation, community engagement, and social media strategy.</li>
+                                <li>Contributed to fixing problems and feature enhancements on existing projects.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                 <section class="mb-8">
+                    <h2 class="section-title">Projects</h2>
+                    <div class="space-y-6">
+                        <div class="project-item">
+                            <h3 class="text-xl job-title">Modiration on Discord Server</h3>
+                            <p class="company-name">
+                                <a href="https://discord.gg/english" target="_blank" rel="noopener noreferrer" class="hover:underline gray-700">
+                                    English (A Discord Server)
+                                </a>
+                            </p>
+                            <a href="https://discord.gg/english" target="_blank" rel="noopener noreferrer" class="hover:underline text-gray-700">
+                            </a>
+                            <p class="text-gray-700 mt-2 leading-relaxed">
+                                Moderator of an international English practice Discord server with 68,000+ members, responsible for enforcing community guidelines and maintaining a safe, respectful environment for language exchange. (2021-2023)
+                            </p>
+                        </div>
+                        <div class="project-item">
+                            <h3 class="text-xl job-title">CEO of The Rouming Soul</h3>
+                            <p class="company-name">
+                                <a href="https://the-roaming-soul.odoo.com/" target="_blank" rel="noopener noreferrer" class="hover:underline gray-700">
+                                    theroamingsoulbd.com
+                                </a>
+                            </p>
+                            <p class="text-gray-700 mt-2 leading-relaxed">
+                                CEO and founder of a travel coordination platform that connects users with tailored group trips, overseeing operations, strategy, and growth to ensure seamless and personalized travel experiences.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="md:col-span-1 content-section bg-gray-50 md:bg-transparent rounded-b-lg md:rounded-bl-none md:rounded-r-lg">
+                <section class="mb-8">
+                    <h2 class="section-title">Skills</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">C and C++</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">Photo Editing</span>
+                        <span class="skill-tag">Video Editing</span>
+                        <span class="skill-tag">Git & GitHub</span>
+                    </div>
+                </section>
+
+                <section class="mb-8">
+                    <h2 class="section-title">Education</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="text-lg degree-title">primary school</h3>
+                            <p class="institution-name">Milestone College</p>
+                            <p class="date-range">2019</p>
+                            <p class="text-gray-700 text-sm mt-1">I was a student of English vertion and i was a regular student of this institution from class 1 to 10 (SSC).</p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg degree-title">Higher School</h3>
+                            <p class="institution-name">Milestone College</p>
+                            <p class="date-range">2021</p>
+                            <p class="text-gray-700 text-sm mt-1">From English vertion department I have completed my HSCC. (GPA:5:00)</p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg degree-title">Bachelor of  Science</h3>
+                            <p class="institution-name">World University of Bangladesh</p>
+                            <p class="date-range">2022 - Present</p>
+                            <p class="text-gray-700 text-sm mt-1">Currently pursuing my undergraduate degree, focusing on software development, algorithms, and modern web technologies.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-8">
+                    <h2 class="section-title">Languages</h2>
+                    <ul class="list-inside text-gray-700 space-y-1">
+                        <li><strong>Bangla:</strong> Native proficiency</li>
+                        <li><strong>English:</strong> Professional working proficiency</li>
+                        <li><strong>Hindi:</strong> Elementary proficiency</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="section-title">Awards & Certifications</h2>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>I've complited my IELTS from British American Resource Center with the score of 7. (2022)</li>
+                        <li>Awarded First Place in the 2022 Debate Competition on Global Warming, held at the NTV.</li>
+                        <li>Official Partner of PUBG Mobile Bangladesh and Host for PUBG Mobile Esports events, recognized for professional live streaming and tournament coverage.</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
